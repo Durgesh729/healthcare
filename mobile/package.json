@@ -1,0 +1,48 @@
+{
+  "name": "health-monitoring-mobile",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "start-anonymous": "EXPO_NO_ACCOUNT_PROMPT=1 expo start --offline --clear",
+    "start-local": "expo start --localhost --clear",
+    "start-tunnel": "expo start --tunnel",
+    "start-web": "expo start --web",
+    "start-clear": "expo start --clear",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/stack": "^6.4.1",
+    "@supabase/supabase-js": "^2.45.0",
+    "expo": "~55.0.0",
+    "expo-asset": "~55.0.8",
+    "expo-camera": "~55.0.9",
+    "expo-file-system": "~55.0.10",
+    "expo-image-picker": "~55.0.12",
+    "expo-linear-gradient": "^55.0.8",
+    "expo-media-library": "~55.0.9",
+    "expo-sqlite": "~55.0.10",
+    "expo-status-bar": "~55.0.4",
+    "i18next": "^23.15.0",
+    "react": "19.2.0",
+    "react-i18next": "^15.0.0",
+    "react-native": "0.83.2",
+    "react-native-gesture-handler": "~2.30.0",
+    "react-native-paper": "^5.12.3",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-url-polyfill": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "~19.2.10",
+    "babel-preset-expo": "~55.0.8",
+    "typescript": "^5.3.0"
+  },
+  "private": true
+}

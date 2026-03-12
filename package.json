@@ -1,0 +1,31 @@
+{
+  "name": "health-monitoring-system",
+  "version": "1.0.0",
+  "description": "Complete health monitoring system with admin dashboard and mobile app",
+  "scripts": {
+    "install-all": "npm run install-admin && npm run install-mobile",
+    "install-admin": "cd admin && npm install",
+    "install-mobile": "cd mobile && npm install",
+    "start-admin": "cd admin && npm run dev",
+    "start-mobile": "cd mobile && npm start",
+    "build-admin": "cd admin && npm run build",
+    "build-mobile": "cd mobile && expo build:android",
+    "check-setup": "node check-setup.js",
+    "verify-mobile": "cd mobile && node verify-setup.js"
+  },
+  "keywords": [
+    "health",
+    "monitoring",
+    "react",
+    "react-native",
+    "supabase",
+    "expo",
+    "ai",
+    "offline-first"
+  ],
+  "author": "Health Monitoring Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

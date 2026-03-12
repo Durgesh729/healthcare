@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Health Monitor",
+    "slug": "health-monitor-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to attach images to survey submissions.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to capture images for survey submissions."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos to attach images to survey submissions.",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to capture images for survey submissions."
+        }
+      ]
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "newArchEnabled": false,
+      "package": "com.anonymous.healthmonitormobile"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "newArchEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
